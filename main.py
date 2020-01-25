@@ -10,23 +10,9 @@ print("Starting display test...")
 
 display = Display()
 
-# for x in range(0, 64):
-#     display.set_pixel(x, x)
-
-# for x in range(0, 64):
-#     display.set_pixel(32 + x, x)
-
-for x in range(0, 128):
-    display.set_pixel(x, 0)
-
-    display.set_pixel(x, 63)
-
-for y in range(0, 64):
-    display.set_pixel(0, y)
-
-    display.set_pixel(127, y)
-
 display.draw_string(12, 16, 'How was work?', font, wrap = True)
+
+display.draw_rect(0, 0, 128, 64)
 
 while True:
     display.draw_character(60, 40, chr(3), font)

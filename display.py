@@ -27,6 +27,15 @@ class Display():
         self.driver.set_gdram_bytes(x, y,
             self.display_buffer[y][x])
 
+    def draw_rect(self, x, y, width, height, state = True):
+        for rx in range(x, x + width):
+            self.set_pixel(rx, y, state)
+            self.set_pixel(rx, y + height - 1, state)
+        
+        for ry in range(y, y + height):
+            self.set_pixel(x, ry, state)
+            self.set_pixel(x + width - 1, ry, state)
+
     def fill_rect(self, x, y, width, height, state = True):
         for rx in range(x, x + width):
             for ry in range(y, y + height):
