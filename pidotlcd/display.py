@@ -1,5 +1,5 @@
 import math
-from display_driver import DisplayDriver
+from pidotlcd.display_driver import DisplayDriver
 
 class Display():
 

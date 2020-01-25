@@ -1,6 +1,8 @@
+import sys
+sys.path.insert(0,'..')
+
 import time
-from display import Display
-from font import Font
+from pidotlcd import Display, Font
 
 print('Loading font...')
 
@@ -10,7 +12,7 @@ print("Starting display test...")
 
 display = Display()
 
-display.draw_string(12, 16, 'How was work?', font, wrap = True)
+display.draw_string(30, 16, 'Hello Pi!', font)
 
 display.draw_rect(0, 0, 128, 64)
 
