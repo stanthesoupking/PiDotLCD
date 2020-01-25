@@ -1,3 +1,4 @@
+# Import from parent directory
 import sys
 sys.path.insert(0,'..')
 
@@ -5,15 +6,12 @@ import time
 from pidotlcd import Display, Font
 
 print('Loading font...')
-
 font = Font('./font.png')
 
 print("Starting display test...")
 
 display = Display()
-
 display.draw_string(30, 16, 'Hello Pi!', font)
-
 display.draw_rect(0, 0, 128, 64)
 
 while True:
