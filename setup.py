@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="stanthesoupking",
-    version="0.0.1",
+    version="0.1.0",
     author="Stanley Fuller",
     author_email="stanthesoupking@gmail.com",
-    description="Python driver for using the 128x64 dot LCD display on a Raspberry Pi",
+    description="Python driver for using a 128x64 dot LCD display on a Raspberry Pi",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/stanthesoupking/PiDotLCD",

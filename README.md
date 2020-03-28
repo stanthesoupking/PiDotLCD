@@ -1,5 +1,5 @@
 # PiDotLCD
-Python driver for using the 128x64 dot LCD display on a Raspberry Pi
+Python driver for using a 128x64 dot LCD display on a Raspberry Pi
 
 ## Basic Usage
 ```python3
@@ -11,7 +11,4 @@ display = PiDotLCD.display()
 display.set_pixel(16, 16) # Set pixel
 
 display.set_pixel(16, 16, False) # Clear pixel
-
-
-
 ```
