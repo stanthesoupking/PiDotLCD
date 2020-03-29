@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="stanthesoupking",
-    version="0.1.0",
+    name="PiDotLCD",
+    version="0.1.1",
     author="Stanley Fuller",
     author_email="stanthesoupking@gmail.com",
     description="Python driver for using a 128x64 dot LCD display on a Raspberry Pi",

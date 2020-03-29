@@ -1,12 +1,11 @@
 import spidev
-import time
 
 class DisplayDriver:
-    def __init__(self):
+    def __init__(self, spi_max_speed_hz = 1600000):
         self.spi = spidev.SpiDev()
         self.spi.open(0, 0)
 
-        self.spi.max_speed_hz = 600000 #540 khz
+        self.spi.max_speed_hz = spi_max_speed_hz
         self.spi.cshigh = True
 
         # Turn display on
